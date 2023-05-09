@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+    <Company>Drastic Actions</Company>
+    <Copyright>Copyright (C) Drastic Actions</Copyright>
+    <Version>1.0.0</Version>
+    <Authors>$(Company)</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>favicon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+    <Description>An Image Hashing system using SkiaSharp.</Description>
+    <PackageTags>image hash skiasharp</PackageTags>
+    <PackageProjectUrl>https://github.com/drasticactions/Drastic.ImageHash</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/drasticactions/Drastic.ImageHash/blob/main/CHANGELOG.md</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)favicon.png" Pack="true" PackagePath="" Visible="false" />
+    <None Include="$(MSBuildThisFileDirectory)../../README.md" Pack="true" PackagePath="" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+  </ItemGroup>
+
+</Project>

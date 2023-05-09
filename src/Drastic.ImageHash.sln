@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.ImageHash", "Drastic.ImageHash\Drastic.ImageHash.csproj", "{181DA31E-6BFE-4871-A5FD-E96F93B0BFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.ImageHashTests", "..\tests\Drastic.ImageHashTests\Drastic.ImageHashTests.csproj", "{7C66CCCB-4869-47E7-8A10-7DBBE8293F3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{181DA31E-6BFE-4871-A5FD-E96F93B0BFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181DA31E-6BFE-4871-A5FD-E96F93B0BFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181DA31E-6BFE-4871-A5FD-E96F93B0BFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181DA31E-6BFE-4871-A5FD-E96F93B0BFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C66CCCB-4869-47E7-8A10-7DBBE8293F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C66CCCB-4869-47E7-8A10-7DBBE8293F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C66CCCB-4869-47E7-8A10-7DBBE8293F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C66CCCB-4869-47E7-8A10-7DBBE8293F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
