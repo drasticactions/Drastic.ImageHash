@@ -2,5 +2,5 @@
 
 # Drastic.ImageHash
 
-Drastic.ImageHash is an implmentation of [coenm.ImageHash](https://github.com/coenm/ImageHash) using SkiaSharp.
+Drastic.ImageHash is an implementation of [coenm.ImageHash](https://github.com/coenm/ImageHash) using SkiaSharp.
 
