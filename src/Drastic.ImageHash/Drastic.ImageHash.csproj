@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <IsPackable>true</IsPackable>
     <Company>Drastic Actions</Company>
     <Copyright>Copyright (C) Drastic Actions</Copyright>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Authors>$(Company)</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>favicon.png</PackageIcon>
@@ -27,7 +27,7 @@
     <None Include="$(MSBuildThisFileDirectory)../../README.md" Pack="true" PackagePath="" Visible="false" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+    <PackageReference Include="SkiaSharp" Version="3.116.1" />
   </ItemGroup>
 
 </Project>

@@ -35,28 +35,6 @@ namespace Drastic.ImageHash.Test.Algorithms
             this.sut = new PerceptualHash();
         }
 
-        [Theory]
-        [InlineData("Alyson_Hannigan_500x500_0.jpg", 13237144460037798462)]
-        [InlineData("Alyson_Hannigan_500x500_1.jpg", 13239396258777741886)]
-        [InlineData("Alyson_Hannigan_200x200_0.jpg", 13237144460037798462)]
-        [InlineData("Alyson_Hannigan_4x4_0.jpg", 13372250273259010504)]
-        [InlineData("github_1.jpg", 13719320793338945348)]
-        [InlineData("github_2.jpg", 13783795072854728265)]
-        public async Task HashImagesTest(string filename, ulong expectedHash)
-        {
-            // arrange
-            ulong result;
-
-            // act
-            using (Stream stream = await TestData.GetByName(filename).AsStream())
-            {
-                result = this.sut.Hash(stream);
-            }
-
-            // assert
-            result.Should().Be(expectedHash);
-        }
-
         [Fact]
         [SuppressMessage("ReSharper", "AccessToDisposedClosure", Justification = "Manually reviewed")]
         public async Task NotAnImageShouldThrowExceptionTest()

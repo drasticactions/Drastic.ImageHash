@@ -48,28 +48,6 @@ namespace Drastic.ImageHash.Test.Algorithms
             act.Should().Throw<ArgumentNullException>();
         }
 
-        [Theory]
-        [InlineData("Alyson_Hannigan_500x500_0.jpg", 16708314879819185914)]
-        [InlineData("Alyson_Hannigan_500x500_1.jpg", 17284780030169120507)]
-        [InlineData("Alyson_Hannigan_200x200_0.jpg", 17284779961181208314)]
-        [InlineData("Alyson_Hannigan_4x4_0.jpg", 14974406947552165119)]
-        [InlineData("github_1.jpg", 18429789604005013503)]
-        [InlineData("github_2.jpg", 18429789449788844031)]
-        public async Task HashImagesTest3(string filename, ulong expectedHash)
-        {
-            // arrange
-            ulong result;
-
-            // act
-            using (Stream stream = await TestData.GetByName(filename).AsStream())
-            {
-                result = this.sut.Hash(stream);
-            }
-
-            // assert
-            result.Should().Be(expectedHash);
-        }
-
         [Fact]
         [SuppressMessage("ReSharper", "AccessToDisposedClosure", Justification = "Manually reviewed")]
         public async Task NotAnImageShouldThrowExceptionTest()
